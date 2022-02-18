@@ -1,0 +1,108 @@
+https://orientamentoinformatica.dista.uninsubria.it/materiale-progetto-stage-2021-22/
+password: InsubriaStage2022
+
+introduzione alla criptografia a chiave pubblica
+
+schimi di cifratura simmetrici: A e B vogliono parlare su un canale privato ma insicuro mediante una chiave
+come nascondere il messaggio?
+K chiave, segreta e conosciuta sia da mittente e ricevente --> dalla chiave si arriva al messaggio decriptato (con uno schema di cifratura)
+anche se il messaggio viene intercettato questo non riesce ad essere decriptato
+
+il più famoso è AES con chiavi da 128 a 256 bit
+
+SCHEMI DI CIFRATURA ASIMMETRICI:
+
+il problema è scambiare la chiave in modo sicuro!!!
+come si è risolto il problema?
+schemi di cifratura con chiavi diverse ma correlate per cifratura e decifratura --> no problema dello scambio della chiave
+Es: schema RSA 1978 (iniziali inventori) 
+All'inizio anni 70 era già stato inventato e utilizzato dagli inglesi
+
+2 chiavi:
+ - pubblica per cifrare (pk)
+ - segreta per decifrare (sk)
+
+B manda chiave pubblica ad A --> A utilizza la chiave pubblica di B per cifrare un messaggio --> B usa la sua chiave segreta per decifrare
+
+COME LO COSTRUIAMO? con la matematica
+
+i messaggi sono numeri interi modulari (non trasformiamo in parola)
+aritmetica modulare % --> è l'operatore principale usato per la criptazione
+facile criptare ma difficile decriptare senza chiave segreta
+
+gli interi modulo n formano un gruppo rispetto all'operazione di addizione
+
+vogliamo un'operazione facile in un senso ma difficile nell'altro
+non è sempre detto che esista un altro m' tale per cui m' fa da inverso moltiplicativo (tipo se il mcd tra i due numeri = 1)
+
+si nasconde il messaggio originale moltiplicandolo tante volte (elevando a potenza) e calcolando il modulo = messaggio cifrato
+è importante saper tornare indietro!!
+
+teoremi fondamentali (come teorema di eulero) che garantiscono la possibilità di tornare indietro
+
+COLLEGAMENTO TRA CHIAVE SEGRETA E CHIAVE PUBBLICA??
+
+le chiavi vengono generate partendo da due primi molto grandi completamente casuali
+si calcola il prodotto tra i 2 primi: N = pq
+e: gcd(e, (p-1)*(q-1)) = 1 --> e e (p-1)*(q-1) sono coprimi
+de = 1 mod (p-1)*(q-1)
+pk = (N, e)     sk = (d, p, q)
+
+per cifrare:   c <-- m^e mod N
+per decifrare: m <-- c^d mod N
+
+se conosci e ed N e non d non puoi conoscere m, ma nessuno l'ha mai dimostrato
+se p e q sono noti è facile risalire a d = (p-1)*(q-1)
+
+p e q sono di 300 - 325 cifre l'uno
+
+CERTFICATI
+
+ogni utente ha un'identità che corrisponde a una chiave pubblica.
+Come sapere se l'informazione è vera (quella è la chiave di B) --> autorità certificatrice che A e B si fidano
+ci sono delle super autorità (Root certificate autority che si autofirmano il certificato) di cui tutti si fidano che firmano a cascata tutti i significati
+i certificati si trovano all'interno dei browser (sono centinaia)
+
+----------------------------------------------------------------------------------------
+
+https://hub.gke2.mybinder.org/user/simonebottoni-l-io_crittografia-f9bsidm1/lab/tree/Laboratorio%20di%20Crittografia.ipynb
+https://mybinder.org/v2/gh/SimoneBottoni/Laboratorio Crittografia/HEAD
+
+NOTE BOOK:
+
+varie celle di due tipi:
+ - codice
+ - markdown (di testo formattato)
+
+# titolo
+## sottotitolo
+*corsivo*
+**grassetto**
+
+tutte le celle sono indipendenti
+
+Cifrario di Cesare:
+a --> d
+b --> e
+c --> f
+...
+
+k è il numero di posizione per cui la lettera viene shiftata
+
+con la cifratura asimmetrica si possono avere anche messaggi autentici ma non segreti: se il messaggio si decripta con la chiave pubblica di B allora il messaggio la criptato B con la sua chiave privata
+si può fare anche autenticazione e segretezza cifrando 2 volte (criptando il messaggio che si invia con la chiave privata del mittente ecc...)
+
+Crivello di Eratostene:
+per trovare i numeri primi cancello tutti i multipli dei numreri che controllo
+
+ARITMETICA MODULARE (o aritmetica dell'orologio)
+
+c = m^e mod N
+m = c^e mod N
+
+PROTOCOLLO DIFFI ELMAN
+
+scambiarsi le chiavi in modo sicuro
+la chiave sicura è generata da due numeri generati a caso da mittente e ricevente
+molto utile per la cifratura simmetrica
+
