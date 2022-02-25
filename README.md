@@ -12,15 +12,15 @@ Nei giorni 15, 17, 22 e 25 febbraio si terrà il “Progetto Stage” durante il
 ## Materiali
 i materiali sono stati raccolti in questa repo, alternativamente si possono recuperare e scaricare [su questo sito](https://orientamentoinformatica.dista.uninsubria.it/materiale-progetto-stage-2021-22/) mediante la password: InsubriaStage2022
 
-https://uninsubria365-my.sharepoint.com/personal/brunella_gerla_uninsubria_it/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrunella%5Fgerla%5Funinsubria%5Fit%2FDocuments%2Forientamento%2FProgettoStage%2F2021%2D2022%2Fmateriale%2FLaboratorio%5FData%5FAnalysis%2Ezip&parent=%2Fpersonal%2Fbrunella%5Fgerla%5Funinsubria%5Fit%2FDocuments%2Forientamento%2FProgettoStage%2F2021%2D2022%2Fmateriale
-
-
-
-
-
 ## IoT:
 [risorse](https://nodered.org/docs/getting-started/local)
 
 ## Crittografia
-https://hub.gke2.mybinder.org/user/simonebottoni-l-io_crittografia-f9bsidm1/lab/tree/Laboratorio%20di%20Crittografia.ipynb
-https://mybinder.org/v2/gh/SimoneBottoni/Laboratorio Crittografia/HEAD
+[link 1](https://hub.gke2.mybinder.org/user/simonebottoni-l-io_crittografia-f9bsidm1/lab/tree/Laboratorio%20di%20Crittografia.ipynb)
+[link 2](https://mybinder.org/v2/gh/SimoneBottoni/Laboratorio%20Crittografia/HEAD)
+
+## Data Analysis and Visualisation
+[risorse](https://uninsubria365-my.sharepoint.com/personal/brunella_gerla_uninsubria_it/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrunella%5Fgerla%5Funinsubria%5Fit%2FDocuments%2Forientamento%2FProgettoStage%2F2021%2D2022%2Fmateriale%2FLaboratorio%5FData%5FAnalysis%2Ezip&parent=%2Fpersonal%2Fbrunella%5Fgerla%5Funinsubria%5Fit%2FDocuments%2Forientamento%2FProgettoStage%2F2021%2D2022%2Fmateriale)
+
+## Bolckchain
+0 materiali per ora
