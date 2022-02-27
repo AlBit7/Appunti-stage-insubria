@@ -23,4 +23,4 @@ i materiali sono stati raccolti in questa repo, alternativamente si possono recu
 [risorse](https://uninsubria365-my.sharepoint.com/personal/brunella_gerla_uninsubria_it/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbrunella%5Fgerla%5Funinsubria%5Fit%2FDocuments%2Forientamento%2FProgettoStage%2F2021%2D2022%2Fmateriale%2FLaboratorio%5FData%5FAnalysis%2Ezip&parent=%2Fpersonal%2Fbrunella%5Fgerla%5Funinsubria%5Fit%2FDocuments%2Forientamento%2FProgettoStage%2F2021%2D2022%2Fmateriale)
 
 ## Bolckchain
-0 materiali per ora
+[sito interattivo per la creazione di una blockchain](https://andersbrownworth.com/blockchain/hash)
