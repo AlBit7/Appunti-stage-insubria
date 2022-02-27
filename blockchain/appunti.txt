@@ -1,0 +1,58 @@
+Blockchain: registro distribuito (distributed ledger) e decentralizzato
+- distribuito: organizzato a blocchi collegati come se fossero una catena (nel caso della catena)
+- registro di transazioni valide
+
+Bitcoin è un'applicazione che gira sul registro distribuito della Blockchain
+
+molte applicazioni sulle blockchain, non solo Bitcoin e criptovalute!!
+
+vantaggi?
+necessità di criptovalute (tutto parte da li) 
+non ci sono banche o autorità centralizzate
+
+cifratura asimmetrica è pesantemente usata nella blockchain
+è usata più per l'autenticazione che per la confidenzialità (cifrando con la chiave privata --> firma digitale)
+
+funzione di hash:
+inpunt plaintext
+output hash
+caratteristiche:
+oneway (se conosco i valori di hash non posso recuperare il testo (anche se consosco il funzionamento della funzione di hash))
+collision free (due documenti non potranno mai avere lo stesso hash)
+
+unione di hash e cifratura asimmetrica --> firma digitale
+si cifra l'hash del documento con la chiave privata (documento e hash del documento vengono mandati assieme)
+alla fine confronto i valori di hash --> se sono uguali il messaggio è autentico e immodificato
+
+transazioni protette da questo meccanismo
+transazioni sono statements:
+creo una moneta con ID, la cripto con la chiave privata 
+si è sicuri che la moneta sia di X e che sia stata creata da X
+
+per spendere: includo il valore hash della moneta creata
+
+ci possono essere i double spending attack: si spende 2 volte in simultaneo
+per sistemare il problema ci vuole una validazione che questa non sia già stata spesa --> registro di transazioni
+nel registro le transazioni non possono essere modificate!!
+
+il registro verifica ogni transazione
+chi va a gestire la catena se non deve esserci un autorità centrale??
+
+consenso distribuito tra nodi onesti
+peer2peer --> tanti nodi collegati un po' a caso
+il consenso funziona così:
+- ognuno valida le transazioni di un blocco che bisogna inserire nella blockchain
+- chi inserisce il blocco deve avere un consenso distribuito rispetto alle validazioni degli altri validatori
+nel mondo reale il peer2peer non funzionerebbe perchè molti nodi ptrebbero essere malizi, sconnessi ecc...
+
+quindi consenso distribuito --> PoW = proof of work (ce ne sono moltissimi altri (PoS, PoC, PoB, Pol, PoET, PoA, DPoS, LPoS, DAG, PBFT))
+
+SMART CONTRACT  
+ha il compito di validare transazioni senza autorità centralizzate
+
+è una piattaforma con una fiducia decentralizzata --> tantissimissime applicazioni:
+processi che devono essere eseguiti da attività diverse che non si fidano ma devono collaborare
+in sostanza la fiducia non è più un problema!!
+la transazione valida sarebbe quella con tutti i passaggi corretti e la validazione è data in pasto alla blockchain
+
+https://andersbrownworth.com/blockchain/hash
